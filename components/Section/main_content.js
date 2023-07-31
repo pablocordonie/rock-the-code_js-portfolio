@@ -1,40 +1,42 @@
 import './main_content.css';
-import sections from '../../data/data.js';
 
-const createAboutTemplate = (section) => `
-    <div class="rtc--cv-main-${section.href.toLowerCase()}_container">
-        <div class="rtc--cv-main-${section.href.toLowerCase()}-img_container">
-            <img src="#" alt="Foto de ${section.author}">
-        </div>
-        <div class="rtc--cv-main-${section.href.toLowerCase()}-text_container">
-            <p>Texto a rellenar</p>
-            <ul>
-                <li>
-                    <p>${section.author}</p>
-                </li>
-                <li>
-                    <p>Actualmente busco empleo para ser ${section.job}</p>
-                </li>
-                <li>
-                    <p>Email: 
-                        <a href="mailto:${section.email}">${section.email}</a>
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
+const createImageTemplate = (data) => `<img class="rtc--cv-main-about-img" src="${data.image}" alt="Foto de ${data.author}">`;
+const createTextTemplate = (data) => `<p class="rtc--cv-main-about-description">${data.text}</p>`;
+const createDataListTemplate = (data) => `
+    <ul class="rtc--cv-main-about-personal_info">
+        <li class="rtc--cv-main-about-info-author">
+            <p>${data.author}</p>
+        </li>
+        <li class="rtc--cv-main-about-info-job">
+            <p>${data.job}</p>
+        </li>
+        <li class="rtc--cv-main-about-info-email">
+            <a href="mailto:${data.email}">${data.email}</a>
+        </li>
+    </ul>
 `;
 
-const createSectionTemplate = (section) => `
-    <section id="${section.href.toLowerCase()}">
-        ${createAboutTemplate(section)}
-    </section>
-`;
+const createImageData = (data) => {
+    const imgContainer = document.querySelector('.rtc--cv-main-about-img_container');
+    console.log(imgContainer);
+    imgContainer.innerHTML += createImageTemplate(data);
 
-const createMainContent = () => {
-    const main = document.querySelector('main');
+    return imgContainer;
+};
 
-    main.innerHTML += createSectionTemplate(sections[0]);
+const createTextData = (data) => {
+    const textContainer = document.querySelector('.rtc--cv-main-about-text_container');
+
+    textContainer.innerHTML += createTextTemplate(data);
+    textContainer.innerHTML += createDataListTemplate(data);
+
+    return textContainer;
+};
+
+const createMainContent = (data) => {
+    const aboutContainer = document.querySelector('.rtc--cv-main-about_container');
+    aboutContainer.appendChild(createImageData(data));
+    aboutContainer.appendChild(createTextData(data));
 };
 
 export default createMainContent;

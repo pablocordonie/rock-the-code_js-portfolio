@@ -1,19 +1,10 @@
-const sections = [
-    {
-        author: 'Pablo Cordonié',
-        logo: '👨‍🏫️',
-        href: 'About',
-        job: 'JavaScript Developer',
-        email: 'pablogarcia.93.06@gmail.com'
-    },
-    {
-        logo: '📚️',
-        href: 'Skills'
-    },
-    {
-        logo: '📱️',
-        href: 'Contact'
-    }
-];
+const authorData = {
+    author: 'Pablo Cordonié',
+    logo: '👨‍🏫️',
+    image: '#',
+    job: 'JavaScript Developer',
+    email: '📬️@gmail.com',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.'
+};
 
-export default sections;
+export default authorData;
