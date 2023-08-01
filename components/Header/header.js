@@ -1,10 +1,11 @@
 import './header.css';
-import authorData from '../../data/data.js';
 
-const createHeaderData = () => {
+const createLogo = (data) => `<span role="img">${data.logo}</span>`;
+
+const createHeaderData = (data) => {
     const logoAnchor = document.querySelector('.rtc--cv-header-logo');
 
-    logoAnchor.innerText = authorData.logo;
+    logoAnchor.innerHTML += createLogo(data);
 }
 
 export default createHeaderData;

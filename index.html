@@ -13,10 +13,10 @@
     <nav>
       <ul>
         <li>
-          <a class="rtc--cv-header-skills" href="#skills">📚️ Skills</a>
+          <a class="rtc--cv-header-skills" href="#skills">Skills</a>
         </li>
         <li>
-          <a class="rtc--cv-header-contact" href="#contact">📱️ Contact</a>
+          <a class="rtc--cv-header-contact" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -28,10 +28,22 @@
         <div class="rtc--cv-main-about-text_container"></div>
       </div>
     </section>
-    <section id="skills"></section>
-    <section id="contact"></section>
+    <section id="skills">
+      <label for="filter">
+        <h2>Skills</h2>
+      </label>
+      <input type="text" name="filter" id="filter">
+      <span role="img">🔍️</span>
+      <ul class="rtc--cv-main-skills_list"></ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="rtc--cv-main-contact_container"></div>
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+    <p class="rtc--cv-footer_p">@2023 Rock{theCode} Todos los derechos reservados</p>
+  </footer>
   <script type="module" src="/main.js"></script>
 </body>
 
