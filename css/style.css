@@ -1,15 +1,87 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #000000;
+:root {
+  --primary-color: #f5f7fa;
+  --secondary-color: #203656;
+  --tertiary-color: #70a7d2;
+  --quaternary-color: #bbd4e8;
+  --quinary-color: #426f9e;
+
+  --primary-font: 'Courier Prime', monospace;
+
+  --primary-font-size: 1rem;
+  --secondary-font-size: 1.5rem;
+  --tertiary-font-size: 2rem;
+  --quaternary-font-size: 2.5rem;
+  --quinary-font-size: 3rem;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  color-scheme: light dark;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: var(--secondary-font-size);
+}
+
+a,
+p,
+li {
+  font-size: var(--primary-font-size);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--tertiary-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+header > nav {
+  width: 50%;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+header > nav > ul > li > a:hover {
+  color: var(--tertiary-color);
+  border-bottom: 0.2rem solid var(--tertiary-color);
+}
+
+.rtc--cv-header-logo-img {
+  height: 2.5rem;
+  width: 2.5rem;
 }

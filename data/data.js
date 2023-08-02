@@ -1,7 +1,7 @@
 const authorData = {
     author: 'Pablo Cordonié',
-    logo: '👨‍🏫️',
-    image: '#',
+    logo: './images/code-developer.png',
+    image: './images/luca-unsplash.jpg',
     job: 'Junior JavaScript Developer',
     school: 'Rock{theCode} by ThePower Business School',
     city: 'La Coruña',
