@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
 :root {
-  --primary-color: #f5f7fa;
-  --secondary-color: #203656;
-  --tertiary-color: #70a7d2;
-  --quaternary-color: #bbd4e8;
-  --quinary-color: #426f9e;
+  --primary-color: #ffffff;
+  --primary-grey-color: #aea79f;
+  --secondary-color: #2c001e;
+  --secondary-light-color: #5e2750;
+  --tertiary-color: #e95420;
+  --quaternary-color: #63e3fa;
+  --quinary-color: #72b337;
 
   --primary-font: 'Courier Prime', monospace;
 
@@ -36,10 +38,6 @@ body {
   line-height: 1.5;
 }
 
-h2 {
-  font-size: var(--secondary-font-size);
-}
-
 a,
 p,
 li {
@@ -52,7 +50,22 @@ a {
 }
 
 a:hover {
-  color: var(--tertiary-color);
+  color: var(--quaternary-color);
+}
+
+h2 {
+  font-size: var(--secondary-font-size);
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
 ul {
@@ -60,28 +73,26 @@ ul {
   padding: 0;
 }
 
-header {
+form {
+  margin: 2rem;
+}
+
+input {
+  background-color: var(--secondary-color);
+  border-color: var(--primary-grey-color);
+  border-radius: 0.5rem;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  padding: 0.5rem;
+  width: 10rem;
+}
+
+input:hover {
+  border-color: var(--tertiary-color);
+}
+
+footer {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem;
-}
-
-header > nav {
-  width: 50%;
-}
-
-header > nav > ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-header > nav > ul > li > a:hover {
-  color: var(--tertiary-color);
-  border-bottom: 0.2rem solid var(--tertiary-color);
-}
-
-.rtc--cv-header-logo-img {
-  height: 2.5rem;
-  width: 2.5rem;
 }

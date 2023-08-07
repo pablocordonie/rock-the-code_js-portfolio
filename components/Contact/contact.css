@@ -1,0 +1,17 @@
+.rtc--cv-main-contact_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.rtc--cv-main-contact_data {
+  border: 0.2rem solid var(--primary-grey-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.rtc--cv-main-contact_data:hover {
+  border-color: var(--tertiary-color);
+}

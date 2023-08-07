@@ -1,0 +1,30 @@
+.rtc--cv-main-about_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-evenly;
+}
+
+.rtc--cv-main-about-img_container {
+  height: 32rem;
+  width: 18.75rem;
+}
+
+.rtc--cv-main-about-img {
+  border-radius: 0.5rem;
+  height: 32rem;
+}
+
+.rtc--cv-main-about-text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  max-width: 28.125rem;
+}
+
+.rtc--cv-main-about-text_container > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

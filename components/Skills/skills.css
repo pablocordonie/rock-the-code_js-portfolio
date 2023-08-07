@@ -1,0 +1,26 @@
+.rtc--cv-main-skills > form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rtc--cv-main-skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.rtc--cv-main-skills-item {
+  background-color: var(--secondary-light-color);
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  width: 18.75rem;
+}
+
+.rtc--cv-main-skills-item_title {
+  color: var(--quinary-color);
+}

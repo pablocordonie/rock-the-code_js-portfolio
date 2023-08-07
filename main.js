@@ -1,4 +1,3 @@
-import './css/style.css';
 import authorData from './data/data.js';
 import createHeaderData from './components/Header/header.js';
 import createAboutContent from './components/About/about.js';
