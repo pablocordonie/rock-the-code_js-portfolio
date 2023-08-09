@@ -10,11 +10,31 @@ const createAbilityTemplate = (data) => `
     </li>
 `;
 
-const createAbilitiesList = (data) => {
+export const createAbilitiesList = (data) => {
     for (const ability of data.abilities) {
         const abilitiesList = document.querySelector('.rtc--cv-main-skills_list');
         abilitiesList.innerHTML += createAbilityTemplate(ability);
     }
 }
 
-export default createAbilitiesList;
+export const addEventToInput = () => {
+    const input = document.querySelector('#filter');
+    input.addEventListener('input', toFilterSkills);
+}
+
+const toFilterSkills = (event) => {
+    const inputValue = event.target.value.toUpperCase();
+    const ul = document.querySelector('.rtc--cv-main-skills_list');
+    const li = ul.querySelectorAll('.rtc--cv-main-skills-item');
+
+    for (let i = 0; i < li.length; i++) {
+        const form = li[i].children[0];
+        const progressLabel = form.children[0].innerText;
+
+        if (progressLabel.toUpperCase().indexOf(inputValue) > -1) {
+            li[i].style.display = 'block';
+        } else {
+            li[i].style.display = 'none';
+        }
+    }
+}

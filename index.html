@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./public/images/code-developer.png" type="image/x-icon" />
   <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="/main.js" defer></script>
   <title>Pablo Cordonié | CV</title>
 </head>
 
@@ -33,12 +34,13 @@
     <section class="rtc--cv-main-skills" id="skills">
       <h2>Skills</h2>
       <form>
-        <label for="filter">
+        <label class="rtc--cv-main-skills-input_title" for="filter">
           <span role="img">🔍️</span>
         </label>
-        <input type="text" name="filter" id="filter">
+        <input class="rtc--cv-main-skills-input" type="text" name="filter" id="filter"
+          placeholder="Filter by name of the tech skill">
       </form>
-      <ul class="rtc--cv-main-skills_list"></ul>
+      <ul class="rtc--cv-main-skills_list" id="skills-list"></ul>
     </section>
     <section class="rtc--cv-main-contact" id="contact">
       <h2>Contact</h2>
@@ -48,7 +50,6 @@
   <footer>
     <p class="rtc--cv-footer_p">@2023 Rock{theCode} Todos los derechos reservados</p>
   </footer>
-  <script type="module" src="/main.js"></script>
 </body>
 
 </html>

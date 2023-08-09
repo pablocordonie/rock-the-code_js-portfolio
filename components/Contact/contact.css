@@ -1,3 +1,7 @@
+.rtc--cv-main-contact {
+  gap: 2rem;
+}
+
 .rtc--cv-main-contact_container {
   display: flex;
   flex-wrap: wrap;

@@ -74,7 +74,7 @@ ul {
 }
 
 form {
-  margin: 2rem;
+  padding: 2rem;
 }
 
 input {
@@ -84,7 +84,7 @@ input {
   color: var(--primary-color);
   font-family: var(--primary-font);
   padding: 0.5rem;
-  width: 10rem;
+  width: 18rem;
 }
 
 input:hover {
