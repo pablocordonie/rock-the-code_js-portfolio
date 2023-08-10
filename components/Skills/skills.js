@@ -1,6 +1,6 @@
 import './skills.css';
 
-const createAbilityTemplate = (data) => `
+const createSkillTemplate = (data) => `
     <li class="rtc--cv-main-skills-item">
         <form>
             <label class="rtc--cv-main-skills-item_title" for="skill_level">${data.skill}</label>
@@ -10,10 +10,24 @@ const createAbilityTemplate = (data) => `
     </li>
 `;
 
-export const createAbilitiesList = (data) => {
-    for (const ability of data.abilities) {
-        const abilitiesList = document.querySelector('.rtc--cv-main-skills_list');
-        abilitiesList.innerHTML += createAbilityTemplate(ability);
+export const createSkillsTemplate = (data) => `
+    <section class="rtc--cv-main-skills" id="skills">
+        <h2>Skills</h2>
+        <form>
+            <label class="rtc--cv-main-skills-input_title" for="filter">
+          <span role="img">🔍️</span>
+            </label>
+            <input class="rtc--cv-main-skills-input" type="text" name="filter" id="filter"
+          placeholder="Filter by name of the tech skill">
+        </form>
+        <ul class="rtc--cv-main-skills_list" id="skills-list"></ul>
+    </section>
+`;
+
+export const createSkillsList = (data) => {
+    for (const skill of data.skills) {
+        const skillsList = document.querySelector('.rtc--cv-main-skills_list');
+        skillsList.innerHTML += createSkillTemplate(skill);
     }
 }
 

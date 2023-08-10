@@ -2,7 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 2rem 2rem 3rem 2rem;
 }
 
 header > nav {
@@ -14,8 +14,14 @@ header > nav > ul {
   justify-content: space-around;
 }
 
-header > nav > ul > li > a:hover {
-  border-bottom: 0.2rem solid var(--tertiary-color);
+header > nav > ul > li:hover > a {
+  color: var(--quaternary-color);
+}
+
+header > nav > ul > li:hover,
+.rtc--cv-header-logo-img:hover {
+  cursor: pointer;
+  outline: 0.2rem solid var(--tertiary-color);
 }
 
 .rtc--cv-header-logo-img {
@@ -23,6 +29,23 @@ header > nav > ul > li > a:hover {
   width: 2.5rem;
 }
 
-.rtc--cv-header-logo-img:hover {
-  outline: 0.2rem solid var(--tertiary-color);
+.rtc--cv-header-skills,
+.rtc--cv-header-projects,
+.rtc--cv-header-contact {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+
+.rtc--cv-header-skills > a {
+  width: 3.6rem;
+}
+
+.rtc--cv-header-projects > a {
+  width: 4.75rem;
+}
+
+.rtc--cv-header-contact > a {
+  width: 4.1rem;
 }

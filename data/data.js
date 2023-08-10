@@ -10,7 +10,7 @@ const authorData = {
     phone: '+34📱️',
     cv: '#',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
-    abilities: [
+    skills: [
         {
             skill: 'HTML:5',
             level: 90
