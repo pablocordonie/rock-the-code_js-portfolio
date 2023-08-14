@@ -44,7 +44,7 @@ const authorData = {
             level: 5
         },
         {
-            skill: 'Git',
+            skill: 'Git & GitHub',
             level: 50
         },
         {

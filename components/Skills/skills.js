@@ -1,37 +1,37 @@
 import './skills.css';
 
-const createSkillTemplate = (data) => `
+const createSkillTemplate = (item) => `
     <li class="rtc--cv-main-skills-item">
         <form>
-            <label class="rtc--cv-main-skills-item_title" for="skill_level">${data.skill}</label>
-            <progress class="rtc--cv-main-skills-item_level" id="skill_level" max="100" value="${data.level}"></progress>
-            <span>${data.level}%</span>
+            <label class="rtc--cv-main-skills-item_title" for="skill_level">${item.skill}</label>
+            <progress class="rtc--cv-main-skills-item_level" id="skill_level" max="100" value="${item.level}"></progress>
+            <span>${item.level}%</span>
         </form>
     </li>
 `;
 
-export const createSkillsTemplate = (data) => `
+const createSkillsListTemplate = (data) => {
+    let currentTemplate = '';
+    for (const item of data.skills) {
+        currentTemplate += createSkillTemplate(item);
+    }
+    return currentTemplate;
+};
+
+const createSkillsTemplate = (data) => `
     <section class="rtc--cv-main-skills" id="skills">
         <h2>Skills</h2>
         <form>
             <label class="rtc--cv-main-skills-input_title" for="filter">
-          <span role="img">🔍️</span>
+                <span role="img">🔍️</span>
             </label>
-            <input class="rtc--cv-main-skills-input" type="text" name="filter" id="filter"
-          placeholder="Filter by name of the tech skill">
+            <input class="rtc--cv-main-skills-input" type="text" name="filter" id="filter" placeholder="Filter by name of the tech skill">
         </form>
-        <ul class="rtc--cv-main-skills_list" id="skills-list"></ul>
+        <ul class="rtc--cv-main-skills_list" id="skills-list">${createSkillsListTemplate(data)}</ul>
     </section>
 `;
 
-export const createSkillsList = (data) => {
-    for (const skill of data.skills) {
-        const skillsList = document.querySelector('.rtc--cv-main-skills_list');
-        skillsList.innerHTML += createSkillTemplate(skill);
-    }
-}
-
-export const addEventToInput = () => {
+const addEventToInput = () => {
     const input = document.querySelector('#filter');
     input.addEventListener('input', toFilterSkills);
 }
@@ -52,3 +52,12 @@ const toFilterSkills = (event) => {
         }
     }
 }
+
+const renderSkills = (data) => {
+    const main = document.querySelector('main');
+    main.innerHTML += createSkillsTemplate(data);
+    addEventToInput();
+    return main;
+};
+
+export default renderSkills;

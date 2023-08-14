@@ -29,23 +29,23 @@ header > nav > ul > li:hover,
   width: 2.5rem;
 }
 
-.rtc--cv-header-skills,
-.rtc--cv-header-projects,
-.rtc--cv-header-contact {
+.rtc--cv-header-nav-skills,
+.rtc--cv-header-nav-projects,
+.rtc--cv-header-nav-contact {
   display: flex;
   align-items: center;
   height: 2.5rem;
   padding: 0.5rem;
 }
 
-.rtc--cv-header-skills > a {
+.rtc--cv-header-nav-skills > a {
   width: 3.6rem;
 }
 
-.rtc--cv-header-projects > a {
+.rtc--cv-header-nav-projects > a {
   width: 4.75rem;
 }
 
-.rtc--cv-header-contact > a {
+.rtc--cv-header-nav-contact > a {
   width: 4.1rem;
 }
