@@ -22,6 +22,21 @@
   justify-content: center;
 }
 
+.rtc--cv-main-about-networks_info {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.rtc--cv-main-about-networks_info > a > img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.rtc--cv-main-about-networks_info > a > img:hover,
+.rtc--cv-main-about-networks_info > a > span:hover {
+  outline: 0.2rem solid var(--tertiary-color);
+}
+
 .rtc--cv-main-about-description_info {
   padding: 2rem 0 0 0;
   width: 28.125rem;

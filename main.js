@@ -2,16 +2,16 @@ import authorData from './data/data.js';
 import renderHeader from './components/Header/header.js';
 import renderAbout from './components/About/about.js';
 import renderSkills from './components/Skills/skills.js';
+
 const main = document.querySelector('main');
 const logoAnchor = document.querySelector('.rtc--cv-header-logo');
 const skillsAnchor = document.querySelector('.rtc--cv-header-nav-skills > a');
 const projectsAnchor = document.querySelector('.rtc--cv-header-nav-projects > a');
-const contactAnchor = document.querySelector('.rtc--cv-header-nav-contact > a');
 
 renderHeader(authorData);
 renderAbout(authorData);
 
-const anchors = [logoAnchor, skillsAnchor, projectsAnchor, contactAnchor];
+const anchors = [logoAnchor, skillsAnchor, projectsAnchor];
 
 const handleListener = (event) => {
     event.preventDefault();
@@ -22,8 +22,6 @@ const handleListener = (event) => {
         renderSkills(authorData);
     } else if (linkHref === '/projects') {
         renderProjects(authorData);
-    } else if (linkHref === '/contact') {
-        renderContact(authorData);
     } else {
         renderAbout(authorData);
     }

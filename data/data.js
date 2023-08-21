@@ -6,10 +6,11 @@ const authorData = {
     school: 'Rock{theCode} by ThePower Business School',
     city: 'La Coruña',
     country: 'Spain',
-    email: '📬️@gmail.com',
-    phone: '+34📱️',
-    cv: '#',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
+    email: '@gmail.com',
+    phone: '+34',
+    cv: '#',
+    networks: ['https://www.linkedin.com/login/es?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin', 'https://github.com/login'],
     skills: [
         {
             skill: 'HTML:5',

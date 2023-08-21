@@ -34,8 +34,9 @@ header > nav > ul > li:hover,
 .rtc--cv-header-nav-contact {
   display: flex;
   align-items: center;
+  border-radius: 1rem;
   height: 2.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .rtc--cv-header-nav-skills > a {
