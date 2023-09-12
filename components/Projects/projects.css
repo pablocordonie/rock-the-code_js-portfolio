@@ -1,0 +1,40 @@
+.rtc--cv-main-projects > h2 {
+  text-align: center;
+}
+
+.rtc--cv-main-projects_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 10rem 0 10rem;
+}
+
+.rtc--cv-main-projects-item {
+  background-color: var(--secondary-light-color);
+  border-radius: 0.5rem;
+}
+
+.rtc--cv-main-projects-item_link {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.rtc--cv-main-projects-item_link > .rtc--cv-main-projects-item_title {
+  cursor: pointer;
+  text-align: center;
+  width: 20rem;
+}
+
+.rtc--cv-main-projects-item_link:hover,
+.rtc--cv-main-projects-item_title:hover {
+  color: var(--quinary-color);
+}
+
+.rtc--cv-main-projects-item_preview {
+  border-radius: 0.5rem;
+  height: 6rem;
+  width: 10rem;
+}

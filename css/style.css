@@ -83,7 +83,7 @@ input:hover {
 footer {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 8rem 2rem 2rem 2rem;
 }
 
 @media screen and (min-width: 898px) {

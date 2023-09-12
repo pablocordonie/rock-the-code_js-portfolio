@@ -2,6 +2,7 @@ import authorData from './data/data.js';
 import renderHeader from './components/Header/header.js';
 import renderAbout from './components/About/about.js';
 import renderSkills from './components/Skills/skills.js';
+import renderProjects from './components/Projects/projects.js';
 
 const main = document.querySelector('main');
 const logoAnchor = document.querySelector('.rtc--cv-header-logo');

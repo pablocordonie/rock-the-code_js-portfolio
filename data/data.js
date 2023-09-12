@@ -52,6 +52,33 @@ const authorData = {
             skill: 'Figma',
             level: 5
         }
+    ],
+    projects: [
+        {
+            name: 'Todoconsolas.com',
+            href: 'https://todoconsolas-coruna.netlify.app/',
+            img: '../images/todoconsolas.png',
+        },
+        {
+            name: 'The Swingman',
+            href: 'https://theswingman.netlify.app/',
+            img: '../images/theswingman.png',
+        },
+        {
+            name: 'Color Flipper',
+            href: 'https://color-flipper-pablocordonie.netlify.app/',
+            img: '../images/color-flipper.png',
+        },
+        {
+            name: 'Password Generator',
+            href: 'https://password-generator-pablocordonie.netlify.app/',
+            img: '../images/password-generator.png',
+        },
+        {
+            name: 'VanillaJS Components Integration',
+            href: 'https://vanillajs-pablocordonie.netlify.app/',
+            img: '../images/vanillajs-components.png',
+        }
     ]
 };
 
