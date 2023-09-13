@@ -50,12 +50,12 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--quaternary-color);
-}
-
 h2 {
   font-size: var(--secondary-font-size);
+}
+
+h3 {
+  font-size: var(--primary-font-size);
 }
 
 ul {
@@ -76,18 +76,22 @@ input {
   padding: 0.5rem;
 }
 
-input:hover {
-  border-color: var(--tertiary-color);
-}
-
 footer {
   display: flex;
   justify-content: center;
-  padding: 8rem 2rem 2rem 2rem;
+  padding: 3rem 1rem 2rem 1rem;
 }
 
 @media screen and (min-width: 898px) {
   input {
     width: 18rem;
+  }
+
+  input:hover {
+    border-color: var(--tertiary-color);
+  }
+
+  a:hover {
+    color: var(--quaternary-color);
   }
 }
