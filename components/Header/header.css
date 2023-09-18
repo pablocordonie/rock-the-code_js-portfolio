@@ -3,17 +3,20 @@ header {
   align-items: center;
   justify-content: space-between;
   min-width: 280px;
-  padding: 2rem 2rem 3rem 2rem;
+  padding: 2rem 1rem 3rem 1rem;
 }
 
 header > nav {
-  width: 50%;
+  width: 75%;
 }
 
 header > nav > ul {
   display: flex;
-  gap: 0.25rem;
   justify-content: space-around;
+}
+
+header > nav > ul > li:hover > a {
+  color: var(--quaternary-color);
 }
 
 .rtc--cv-header-logo-img {
@@ -21,9 +24,14 @@ header > nav > ul {
   width: 2.5rem;
 }
 
+.rtc--cv-header-logo-img:hover {
+  cursor: pointer;
+  padding: 0.15rem;
+  outline: 0.2rem solid var(--tertiary-color);
+}
+
 .rtc--cv-header-nav-skills,
-.rtc--cv-header-nav-projects,
-.rtc--cv-header-nav-contact {
+.rtc--cv-header-nav-projects {
   display: flex;
   align-items: center;
   border-radius: 1rem;
@@ -38,32 +46,24 @@ header > nav > ul {
   width: 4.75rem;
 }
 
-.rtc--cv-header-nav-contact > a {
-  width: 4.1rem;
-}
-
-@media screen and (max-width: 300px) {
+@media screen and (min-width: 360px) {
   header {
-    padding: 2rem 1rem 3rem 1rem;
+    padding: 2rem 2rem 3rem 2rem;
   }
 
   header > nav {
-    width: 75%;
-  }
-
-  header > nav > ul {
-    gap: 0;
+    width: 70%;
   }
 }
 
-@media screen and (min-width: 898px) {
-  header > nav > ul > li:hover > a {
-    color: var(--quaternary-color);
+@media screen and (min-width: 540px) {
+  header > nav {
+    width: 60%;
   }
+}
 
-  header > nav > ul > li:hover,
-  .rtc--cv-header-logo-img:hover {
-    cursor: pointer;
-    outline: 0.2rem solid var(--tertiary-color);
+@media screen and (min-width: 720px) {
+  header {
+    padding: 2rem 2rem 4rem 2rem;
   }
 }

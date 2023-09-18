@@ -6,8 +6,7 @@
   --secondary-color: #2c001e;
   --secondary-light-color: #5e2750;
   --tertiary-color: #e95420;
-  --quaternary-color: #63e3fa;
-  --quinary-color: #72b337;
+  --quaternary-color: #72b337;
 
   --primary-font: 'Courier Prime', monospace;
 
@@ -27,6 +26,10 @@
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+html {
+  min-width: 100%;
 }
 
 body {
@@ -50,6 +53,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--quaternary-color);
+}
+
 h2 {
   font-size: var(--secondary-font-size);
 }
@@ -68,12 +75,18 @@ form {
 }
 
 input {
+  justify-content: center;
   background-color: var(--secondary-color);
   border-color: var(--primary-grey-color);
   border-radius: 0.5rem;
   color: var(--primary-color);
   font-family: var(--primary-font);
   padding: 0.5rem;
+  width: 12rem;
+}
+
+input:hover {
+  border-color: var(--tertiary-color);
 }
 
 footer {
@@ -82,16 +95,14 @@ footer {
   padding: 3rem 1rem 2rem 1rem;
 }
 
-@media screen and (min-width: 898px) {
+@media screen and (min-width: 360px) {
+  footer {
+    padding: 8rem 2rem 3rem 2rem;
+  }
+}
+
+@media screen and (min-width: 660px) {
   input {
-    width: 18rem;
-  }
-
-  input:hover {
-    border-color: var(--tertiary-color);
-  }
-
-  a:hover {
-    color: var(--quaternary-color);
+    width: 17.5rem;
   }
 }

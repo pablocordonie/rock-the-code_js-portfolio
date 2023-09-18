@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 2rem 1rem;
 }
 
 .rtc--cv-main-skills_list {
@@ -32,5 +33,5 @@
 }
 
 .rtc--cv-main-skills-item_title {
-  color: var(--quinary-color);
+  color: var(--quaternary-color);
 }

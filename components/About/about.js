@@ -5,20 +5,11 @@ const createAboutTemplate = (data) => `
         <div class="rtc--cv-main-about-img_container">
             <img class="rtc--cv-main-about-img" src="${data.image}" alt="Foto de ${data.author}">
             <div class="rtc--cv-main-about-networks_info">
-                <a class="rtc--cv-main-about-networks_info-linkedin_img" href="${data.networks[0]}">
+                <a class="rtc--cv-main-about-networks_info-linkedin_img" href="${data.networks[0]}" target="_blank">
                     <img src="./images/linkedin.png" alt="Icono de LinkedIn">
                 </a>
-                <a class="rtc--cv-main-about-networks_info-github_img" href="${data.networks[1]}">
+                <a class="rtc--cv-main-about-networks_info-github_img" href="${data.networks[1]}" target="_blank">
                     <img src="./images/github.png" alt="Icono de GitHub">
-                </a>
-                <a class="rtc--cv-main-about-contact_data" href="mailto:${data.email}">
-                <span>📬️</span>
-                </a>
-                <a class="rtc--cv-main-about-contact_data" href="tel:${data.phone}">
-                    <span>📱️</span>
-                </a>
-                <a href="${data.cv}" class="rtc--cv-main-about-contact_data" download="cv">
-                    <span>📑️CV</span>
                 </a>
             </div>
         </div>
@@ -32,8 +23,11 @@ const createAboutTemplate = (data) => `
             <li class="rtc--cv-main-about-job_info">
                 <p>${data.job}</p>
             </li>
-            <li class="rtc--cv-main-about-school_info">
-                <p>${data.school}</p>
+            <li class="rtc--cv-main-about-email_info">
+                <p>${data.email}</p>
+            </li>
+            <li class="rtc--cv-main-about-phone_info">
+                <p>${data.phone}</p>
             </li>
             <li class="rtc--cv-main-about-description_info">
                 <p>${data.text}</p>

@@ -3,14 +3,12 @@ const authorData = {
     logo: './images/code-developer.png',
     image: './images/pablo.jpg',
     job: 'Junior JavaScript Developer',
-    school: 'Rock{theCode} by ThePower Business School',
     city: 'La Coruña',
     country: 'Spain',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
-    email: '@gmail.com',
-    phone: '+34',
-    cv: '#',
-    networks: ['https://www.linkedin.com/login/es?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin', 'https://github.com/login'],
+    email: 'pablogarcia.93.06<wbr>@gmail.com',
+    phone: '+34620801106',
+    networks: ['https://www.linkedin.com/in/pablocordonie/', 'https://github.com/pablocordonie'],
     skills: [
         {
             skill: 'HTML:5',
