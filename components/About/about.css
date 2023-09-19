@@ -84,6 +84,7 @@
 @media screen and (min-width: 720px) {
   .rtc--cv-main-about_container {
     flex-direction: row;
+    padding: 0 2rem;
   }
 
   .rtc--cv-main-about-img {
@@ -93,8 +94,7 @@
 
   .rtc--cv-main-about-personal_info {
     align-items: flex-start;
-    padding-top: 2.25rem;
-    padding-left: 2.25rem;
+    padding: 2.25rem 0 0 2.25rem;
   }
 
   .rtc--cv-main-about-networks_info > a > img:hover {

@@ -5,7 +5,7 @@ const authorData = {
     job: 'Junior JavaScript Developer',
     city: 'La Coruña',
     country: 'Spain',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
+    text: 'Vive como si fueses a morir mañana. Aprende como si fueses a vivir siempre <wbr>(Mahatma Gandhi)',
     email: 'pablogarcia.93.06<wbr>@gmail.com',
     phone: '+34620801106',
     networks: ['https://www.linkedin.com/in/pablocordonie/', 'https://github.com/pablocordonie'],
