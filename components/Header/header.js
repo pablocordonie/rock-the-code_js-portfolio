@@ -1,11 +1,16 @@
 import './header.css';
-
-const createLogo = (data) => `<img class="rtc--cv-header-logo-img" src="${data.logo}" alt="Logo de ${data.author}">`;
+import renderLogo from './Logo/logo';
+import renderMenu from './Menu/menu';
 
 const renderHeader = (data) => {
-    const logoAnchor = document.querySelector('.rtc--cv-header-logo');
+    const header = document.querySelector('header');
 
-    logoAnchor.innerHTML += createLogo(data);
-}
+    header.innerHTML += `
+        ${renderLogo(data)}
+        ${renderMenu()}
+    `;
+
+    return header;
+};
 
 export default renderHeader;

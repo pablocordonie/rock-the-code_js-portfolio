@@ -36,10 +36,4 @@ const createAboutTemplate = (data) => `
     </section>
 `;
 
-const renderAbout = (data) => {
-    const main = document.querySelector('main');
-    main.innerHTML += createAboutTemplate(data);
-    return main;
-};
-
-export default renderAbout;
+export default createAboutTemplate;

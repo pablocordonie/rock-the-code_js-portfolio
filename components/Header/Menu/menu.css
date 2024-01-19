@@ -1,0 +1,15 @@
+.rtc--cv-header-nav-skills,
+.rtc--cv-header-nav-projects {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  height: 2.5rem;
+}
+
+.rtc--cv-header-nav-skills > a {
+  width: 3.6rem;
+}
+
+.rtc--cv-header-nav-projects > a {
+  width: 4.75rem;
+}

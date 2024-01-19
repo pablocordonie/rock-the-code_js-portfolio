@@ -26,10 +26,4 @@ const createProjectsTemplate = (data) => `
     </section>
 `;
 
-const renderProjects = (data) => {
-    const main = document.querySelector('main');
-    main.innerHTML += createProjectsTemplate(data);
-    return main;
-}
-
-export default renderProjects;
+export default createProjectsTemplate;

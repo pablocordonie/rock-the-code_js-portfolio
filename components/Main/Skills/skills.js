@@ -31,33 +31,4 @@ const createSkillsTemplate = (data) => `
     </section>
 `;
 
-const addEventToInput = () => {
-    const input = document.querySelector('#filter');
-    input.addEventListener('input', toFilterSkills);
-}
-
-const toFilterSkills = (event) => {
-    const inputValue = event.target.value.toUpperCase();
-    const ul = document.querySelector('.rtc--cv-main-skills_list');
-    const li = ul.querySelectorAll('.rtc--cv-main-skills-item');
-
-    for (let i = 0; i < li.length; i++) {
-        const form = li[i].children[0];
-        const progressLabel = form.children[0].innerText;
-
-        if (progressLabel.toUpperCase().indexOf(inputValue) > -1) {
-            li[i].style.display = 'block';
-        } else {
-            li[i].style.display = 'none';
-        }
-    }
-}
-
-const renderSkills = (data) => {
-    const main = document.querySelector('main');
-    main.innerHTML += createSkillsTemplate(data);
-    addEventToInput();
-    return main;
-};
-
-export default renderSkills;
+export default createSkillsTemplate;
