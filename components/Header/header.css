@@ -37,7 +37,7 @@ header > nav > ul > li:hover > a {
 
 @media screen and (min-width: 720px) {
   header {
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 2rem 2rem 4rem 2rem;
   }
   header > nav > ul {
     justify-content: space-evenly;
