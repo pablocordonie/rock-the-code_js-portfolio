@@ -88,13 +88,13 @@
   }
 
   .rtc--cv-main-about-img {
-    height: 24rem;
+    height: 26rem;
     width: 16rem;
   }
 
   .rtc--cv-main-about-personal_info {
     align-items: flex-start;
-    padding: 2.25rem 0 0 2.25rem;
+    padding: 3.5rem 0 0 2.25rem;
   }
 
   .rtc--cv-main-about-networks_info > a > img:hover {

@@ -5,11 +5,11 @@ const createAboutTemplate = (data) => `
         <div class="rtc--cv-main-about-img_container">
             <img class="rtc--cv-main-about-img" src="${data.image}" alt="Foto de ${data.author}">
             <div class="rtc--cv-main-about-networks_info">
-                <a class="rtc--cv-main-about-networks_info-linkedin_img" href="${data.networks[0]}" target="_blank">
-                    <img src="./images/linkedin.png" alt="Icono de LinkedIn">
+                <a class="rtc--cv-main-about-networks_info-linkedin_img" href="${data.networks[0].href}" target="_blank">
+                    <img src="${data.networks[0].img}" alt="Icono de LinkedIn">
                 </a>
-                <a class="rtc--cv-main-about-networks_info-github_img" href="${data.networks[1]}" target="_blank">
-                    <img src="./images/github.png" alt="Icono de GitHub">
+                <a class="rtc--cv-main-about-networks_info-github_img" href="${data.networks[1].href}" target="_blank">
+                    <img src="${data.networks[1].img}" alt="Icono de GitHub">
                 </a>
             </div>
         </div>

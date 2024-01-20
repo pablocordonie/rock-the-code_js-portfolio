@@ -5,7 +5,7 @@ const createProjectTemplate = (item) => `
         <form>
             <a class="rtc--cv-main-projects-item_link" href="${item.href}" target="_blank">
                 <h3 class="rtc--cv-main-projects-item_title">${item.name}</h3>
-                <img class="rtc--cv-main-projects-item_preview" src="${item.img}" alt="Imagen previa del proyecto ${item.name}">
+                <img class="rtc--cv-main-projects-item_preview" src="${item.src}" alt="Imagen previa del proyecto ${item.name}">
             </a>
         </form>
     </li>

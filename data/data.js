@@ -1,7 +1,7 @@
 const authorData = {
   author: 'Pablo Cordonié',
-  logo: './images/code-developer.png',
-  image: './images/pablo.jpg',
+  logo: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769523/code-developer_gwlkgn.png',
+  image: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769576/pablo_yttcgm.jpg',
   job: 'Junior JavaScript Developer',
   city: 'La Coruña',
   country: 'Spain',
@@ -9,8 +9,14 @@ const authorData = {
   email: 'pablogarcia.93.06<wbr>@gmail.com',
   phone: '+34620801106',
   networks: [
-    'https://www.linkedin.com/in/pablocordonie/',
-    'https://github.com/pablocordonie'
+    {
+      href: 'https://www.linkedin.com/in/pablocordonie/',
+      img: './images/linkedin.png'
+    },
+    {
+      href: 'https://github.com/pablocordonie',
+      img: './images/github.png'
+    }
   ],
   skills: [
     {
@@ -58,37 +64,37 @@ const authorData = {
     {
       name: 'Kinnectric',
       href: 'https://pablocordonie-css-flex.netlify.app/',
-      img: '../images/kinnectric.png'
+      src: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769657/kinnectric_iiqp1e.png'
     },
     {
       name: 'Pinterest Gallery',
       href: 'https://pablocordonie-vite-pinterest.netlify.app/',
-      img: '../images/pinterest.png'
+      src: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769666/pinterest_huxnnn.png'
     },
     {
       name: 'Todoconsolas.com',
       href: 'https://pablocordonie-todoconsolas.netlify.app/',
-      img: '../images/todoconsolas.png'
+      src: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769593/todoconsolas_paqxan.png'
     },
     {
       name: 'The Swingman',
       href: 'https://theswingman.netlify.app/',
-      img: '../images/theswingman.png'
+      src: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769603/theswingman_ppicaa.png'
     },
     {
       name: 'Color Flipper',
       href: 'https://color-flipper-pablocordonie.netlify.app/',
-      img: '../images/color-flipper.png'
+      src: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769650/color-flipper_y2om7o.png'
     },
     {
       name: 'Password Generator',
       href: 'https://password-generator-pablocordonie.netlify.app/',
-      img: '../images/password-generator.png'
+      src: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769616/password-generator_cc8nkp.png'
     },
     {
       name: 'VanillaJS Components Integration',
       href: 'https://vanillajs-pablocordonie.netlify.app/',
-      img: '../images/vanillajs-components.png'
+      src: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769638/vanillajs-components_fw8jph.png'
     }
   ]
 }
