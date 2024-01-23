@@ -90,11 +90,6 @@ const authorData = {
       name: 'Password Generator',
       href: 'https://password-generator-pablocordonie.netlify.app/',
       src: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769616/password-generator_cc8nkp.png'
-    },
-    {
-      name: 'VanillaJS Components Integration',
-      href: 'https://vanillajs-pablocordonie.netlify.app/',
-      src: 'https://res.cloudinary.com/ddd5cycm4/image/upload/v1705769638/vanillajs-components_fw8jph.png'
     }
   ]
 }
