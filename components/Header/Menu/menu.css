@@ -1,15 +1,17 @@
+@import '../../../css/style.css';
+
 .rtc--cv-header-nav-skills,
 .rtc--cv-header-nav-projects {
   display: flex;
   align-items: center;
-  border-radius: 1rem;
-  height: 2.5rem;
+  border-radius: var(--border-radius-header-nav-a);
+  height: var(--height-header-nav-a);
 }
 
 .rtc--cv-header-nav-skills > a {
-  width: 3.6rem;
+  width: var(--width-main-skills-a);
 }
 
 .rtc--cv-header-nav-projects > a {
-  width: 4.75rem;
+  width: var(--width-main-projects-a);
 }

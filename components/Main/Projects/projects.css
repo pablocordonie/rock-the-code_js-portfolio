@@ -1,3 +1,5 @@
+@import '../../../css/style.css';
+
 .rtc--cv-main-projects > h2 {
   text-align: center;
 }
@@ -5,27 +7,27 @@
 .rtc--cv-main-projects_list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 3rem 2rem 0 2rem;
+  gap: var(--gap-main-projects);
+  padding: var(--padding-main-projects-s);
 }
 
 .rtc--cv-main-projects-item {
   background-color: var(--secondary-light-color);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius-main-projects-item);
 }
 
 .rtc--cv-main-projects-item_link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: var(--gap-main-projects-item-a);
   cursor: pointer;
 }
 
 .rtc--cv-main-projects-item_link > .rtc--cv-main-projects-item_title {
   cursor: pointer;
   text-align: center;
-  width: 16rem;
+  width: var(--width-main-projects-item-title);
 }
 
 .rtc--cv-main-projects-item_link:hover,
@@ -34,20 +36,20 @@
 }
 
 .rtc--cv-main-projects-item_preview {
-  border-radius: 0.5rem;
-  height: 6rem;
-  width: 10rem;
+  border-radius: var(--border-radius-main-projects-item-preview);
+  height: var(--height-main-projects-item-preview);
+  width: var(--width-main-projects-item-preview);
 }
 
 @media screen and (min-width: 460px) {
   .rtc--cv-main-projects_list {
-    padding: 3rem 4rem 0 4rem;
+    padding: var(--padding-main-projects-m);
   }
 }
 
 @media screen and (min-width: 720px) {
   .rtc--cv-main-projects_list {
-    padding: 3rem 8rem 0 8rem;
+    padding: var(--padding-main-projects-l);
   }
 
   .rtc--cv-main-projects-item_link {

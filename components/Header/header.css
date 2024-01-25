@@ -1,13 +1,15 @@
+@import '../../css/style.css';
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 280px;
-  padding: 2rem 1rem 3rem 1rem;
+  min-width: var(--min-width-header);
+  padding: var(--padding-header-s);
 }
 
 header > nav {
-  width: 75%;
+  width: var(--width-header-nav-s);
 }
 
 header > nav > ul {
@@ -21,23 +23,23 @@ header > nav > ul > li:hover > a {
 
 @media screen and (min-width: 360px) {
   header {
-    padding: 2rem 2rem 3rem 2rem;
+    padding: var(--padding-header-m);
   }
 
   header > nav {
-    width: 70%;
+    width: var(--width-header-nav-m);
   }
 }
 
 @media screen and (min-width: 540px) {
   header > nav {
-    width: 60%;
+    width: var(--width-header-nav-l);
   }
 }
 
 @media screen and (min-width: 720px) {
   header {
-    padding: 2rem 2rem 4rem 2rem;
+    padding: var(--padding-header-l);
   }
   header > nav > ul {
     justify-content: space-evenly;

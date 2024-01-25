@@ -1,12 +1,14 @@
+@import '../../../css/style.css';
+
 input {
   justify-content: center;
   background-color: var(--secondary-color);
   border-color: var(--primary-grey-color);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius-main-skills-input);
   color: var(--primary-color);
-  font-family: var(--primary-font);
-  padding: 0.5rem;
-  width: 12rem;
+  font-family: var(--font-family);
+  padding: var(--padding-main-skills-input);
+  width: var(--width-main-skills-input-s);
 }
 
 input:hover {
@@ -22,29 +24,29 @@ input:hover {
 .rtc--cv-main-skills > form {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 2rem 1rem;
+  gap: var(--gap-main-skills-form);
+  padding: var(--padding-main-skills-form);
 }
 
 .rtc--cv-main-skills_list {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: var(--gap-main-skills);
   justify-content: center;
 }
 
 .rtc--cv-main-skills-item {
   background-color: var(--secondary-light-color);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  width: 18.75rem;
+  border-radius: var(--border-radius-main-skills-item);
+  padding: var(--padding-main-skills-item);
+  width: var(--width-main-skills-item);
 }
 
 .rtc--cv-main-skills-item > form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--gap-main-skills-item-form);
 }
 
 .rtc--cv-main-skills-item_title {
@@ -53,6 +55,6 @@ input:hover {
 
 @media screen and (min-width: 660px) {
   input {
-    width: 17.5rem;
+    width: var(--width-main-skills-input-l);
   }
 }

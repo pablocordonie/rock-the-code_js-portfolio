@@ -1,40 +1,42 @@
+@import '../../../css/style.css';
+
 .rtc--cv-main-about_container {
   display: flex;
   flex-direction: column;
-  gap: 3.5rem;
-  margin: 0 2rem 3rem 2rem;
+  gap: var(--gap-main-about);
+  margin: var(--margin-main-about);
 }
 
 .rtc--cv-main-about-img_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: var(--gap-main-about-img);
 }
 
 .rtc--cv-main-about-img {
-  border-radius: 0.75rem;
-  height: 24rem;
-  width: 100%;
+  border-radius: var(--border-radius-main-about-img);
+  height: var(--height-main-about-img-s);
+  width: var(--width-main-about-img-s);
 }
 
 .rtc--cv-main-about-personal_info {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--gap-main-about-info);
   align-items: flex-start;
-  padding: 0 1.5rem;
+  padding: var(--padding-main-about-info-xxs);
 }
 
 .rtc--cv-main-about-networks_info {
   display: flex;
-  gap: 1.25rem;
+  gap: var(--gap-main-about-networks-info);
   justify-content: space-evenly;
 }
 
 .rtc--cv-main-about-networks_info > a > img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: var(--height-main-about-networks-img);
+  width: var(--width-main-about-networks-img);
 }
 
 .rtc--cv-main-about-description_info {
@@ -44,67 +46,66 @@
 
 @media screen and (min-width: 300px) {
   .rtc--cv-main-about-img {
-    width: 14rem;
+    width: var(--width-main-about-img-m);
   }
 
   .rtc--cv-main-about-personal_info {
-    padding: 0 3rem;
+    padding: var(--padding-main-about-info-xs);
   }
 }
 
 @media screen and (min-width: 360px) {
   .rtc--cv-main-about-personal_info {
-    padding: 0 4.5rem;
+    padding: var(--padding-main-about-info-s);
   }
 }
 
 @media screen and (min-width: 400px) {
   .rtc--cv-main-about-personal_info {
-    padding: 0 6rem;
+    padding: var(--padding-main-about-info-xxm);
   }
 }
 
 @media screen and (min-width: 450px) {
   .rtc--cv-main-about-personal_info {
-    padding: 0 7.5rem;
+    padding: var(--padding-main-about-info-xm);
   }
 }
 
 @media screen and (min-width: 500px) {
   .rtc--cv-main-about-img {
-    height: 28rem;
-    width: 16rem;
+    height: var(--height-main-about-img-m);
+    width: var(--width-main-about-img-l);
   }
 
   .rtc--cv-main-about-personal_info {
-    padding: 0 8.5rem;
+    padding: var(--padding-main-about-info-m);
   }
 }
 
 @media screen and (min-width: 720px) {
   .rtc--cv-main-about_container {
     flex-direction: row;
-    padding: 0 2rem;
+    padding: var(--padding-main-about-l);
   }
 
   .rtc--cv-main-about-img {
-    height: 26rem;
-    width: 16rem;
+    height: var(--height-main-about-img-l);
   }
 
   .rtc--cv-main-about-personal_info {
     align-items: flex-start;
-    padding: 3.5rem 0 0 2.25rem;
+    padding: var(--padding-main-about-info-l);
   }
 
   .rtc--cv-main-about-networks_info > a > img:hover {
-    padding: 0.15rem;
-    outline: 0.2rem solid var(--tertiary-color);
+    padding: var(--padding-main-about-networks-img-hover);
+    outline: var(--outline-main-about-networks-img-hover);
   }
 }
 
 @media screen and (min-width: 960px) {
   .rtc--cv-main-about_container {
-    padding: 0 10rem;
+    padding: var(--padding-main-about-xl);
   }
 }

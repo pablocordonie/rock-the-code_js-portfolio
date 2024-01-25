@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
 :root {
+  /* BORDER-RADIUS */
+  --border-radius-header-nav-a: 1rem;
+  --border-radius-main-about-img: 0.75rem;
+  --border-radius-main-projects-item: 0.5rem;
+  --border-radius-main-projects-item-preview: 0.5rem;
+  --border-radius-main-skills-input: 0.5rem;
+  --border-radius-main-skills-item: 0.5rem;
+
+  /* COLOR */
   --primary-color: #ffffff;
   --primary-grey-color: #aea79f;
   --secondary-color: #2c001e;
@@ -8,13 +17,84 @@
   --tertiary-color: #e95420;
   --quaternary-color: #72b337;
 
-  --primary-font: 'Courier Prime', monospace;
+  /* FONT-FAMILY */
+  --font-family: 'Courier Prime', monospace;
 
+  /* FONT-SIZE */
   --primary-font-size: 1rem;
-  --secondary-font-size: 1.5rem;
-  --tertiary-font-size: 2rem;
-  --quaternary-font-size: 2.5rem;
-  --quinary-font-size: 3rem;
+  --font-size-h3: 1.5rem;
+
+  /* HEIGHT */
+  --height-header-logo-img: 2.5rem;
+  --height-header-nav-a: 2.5rem;
+  --height-main-about-img-l: 26rem;
+  --height-main-about-img-m: 28rem;
+  --height-main-about-img-s: 24rem;
+  --height-main-about-networks-img: 1.5rem;
+  --height-main-projects-item-preview: 6rem;
+
+  /* GAP */
+  --gap-main-about: 3.5rem;
+  --gap-main-about-info: 1.5rem;
+  --gap-main-about-img: 1.5rem;
+  --gap-main-about-networks-info: 1.25rem;
+  --gap-main-projects: 2rem;
+  --gap-main-projects-item-a: 1rem;
+  --gap-main-skills: 3rem;
+  --gap-main-skills-form: 0.5rem;
+  --gap-main-skills-item-form: 0.75rem;
+
+  /* MARGIN */
+  --margin-main-about: 0 2rem 3rem 2rem;
+
+  /* OUTLINE */
+  --outline-header-logo-img-hover: 0.2rem solid var(--tertiary-color);
+  --outline-main-about-networks-img-hover: 0.2rem solid var(--tertiary-color);
+
+  /* PADDING */
+  --padding-footer-s: 3rem 1rem 2rem 1rem;
+  --padding-footer-m: 6rem 2rem 2rem 2rem;
+  --padding-header-l: 2rem 2rem 4rem 2rem;
+  --padding-header-logo-img-hover: 0.15rem;
+  --padding-header-m: 2rem 2rem 3rem 2rem;
+  --padding-header-s: 2rem 1rem 3rem 1rem;
+  --padding-main: 2rem;
+  --padding-main-about-l: 0 2rem;
+  --padding-main-about-networks-img-hover: 0.15rem;
+  --padding-main-about-xl: 0 10rem;
+  --padding-main-about-info-l: 3.5rem 0 0 2.25rem;
+  --padding-main-about-info-m: 0 8.5rem;
+  --padding-main-about-info-xm: 0 7.5rem;
+  --padding-main-about-info-xxm: 0 6rem;
+  --padding-main-about-info-s: 0 4.5rem;
+  --padding-main-about-info-xs: 0 3rem;
+  --padding-main-about-info-xxs: 0 1.5rem;
+  --padding-main-projects-l: 3rem 8rem 0 8rem;
+  --padding-main-projects-m: 3rem 4rem 0 4rem;
+  --padding-main-projects-s: 3rem 2rem 0 2rem;
+  --padding-main-skills-form: 2rem 1rem;
+  --padding-main-skills-input: 0.5rem;
+  --padding-main-skills-item: 1rem;
+
+  /* WIDTH */
+  --min-width-body: 280px;
+  --min-width-header: 280px;
+  --min-width-html: 100%;
+  --width-header-logo-img: 2.5rem;
+  --width-header-nav-l: 60%;
+  --width-header-nav-m: 70%;
+  --width-header-nav-s: 75%;
+  --width-main-about-img-l: 16rem;
+  --width-main-about-img-m: 14rem;
+  --width-main-about-img-s: 100%;
+  --width-main-about-networks-img: 1.5rem;
+  --width-main-projects-a: 4.5rem;
+  --width-main-projects-item-title: 16rem;
+  --width-main-projects-item-preview: 10rem;
+  --width-main-skills-a: 3.6rem;
+  --width-main-skills-input-s: 12rem;
+  --width-main-skills-input-l: 17.5rem;
+  --width-main-skills-item: 18.75rem;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,17 +109,17 @@
 }
 
 html {
-  min-width: 100%;
+  min-width: var(--min-width-html);
 }
 
 body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   color-scheme: light dark;
-  font-family: var(--primary-font);
+  font-family: var(--font-family);
   font-weight: 400;
   line-height: 1.5;
-  min-width: 280px;
+  min-width: var(--min-width-body);
 }
 
 a,
@@ -58,7 +138,7 @@ a:hover {
 }
 
 h2 {
-  font-size: var(--secondary-font-size);
+  font-size: var(--font-size-h3);
 }
 
 h3 {

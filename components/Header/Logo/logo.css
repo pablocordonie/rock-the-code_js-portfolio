@@ -1,10 +1,12 @@
+@import '../../../css/style.css';
+
 .rtc--cv-header-logo-img {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: var(--height-header-logo-img);
+  width: var(--width-header-logo-img);
 }
 
 .rtc--cv-header-logo-img:hover {
   cursor: pointer;
-  padding: 0.15rem;
-  outline: 0.2rem solid var(--tertiary-color);
+  padding: var(--padding-header-logo-img-hover);
+  outline: var(--outline-header-logo-img-hover);
 }
